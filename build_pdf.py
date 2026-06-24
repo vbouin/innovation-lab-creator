@@ -103,7 +103,7 @@ P('A working notebook for your two visits — capture what you see, score each s
   'cues are on the next pages; the blank canvases follow.',BODY)
 sp(14)
 cover=[
- ['MORNING · 10:30–12:30','Orange — HQ, Lyon 7','Host: Julien Manivong, Solutions Engineer'],
+ ['MORNING · 10:30–12:30','Orange — 131 av. Félix Faure, 69003 Lyon','Host: Julien Manivong, Solutions Engineer'],
  ['AFTERNOON · 14:00–16:00','Sanofi — 14 Bis Innovation Lab','Host: Sylvain Grivel, Head of 14 Bis · arrive 13:45'],
 ]
 t=Table([[Paragraph('<b>'+a+'</b>',SMALL),Paragraph('<b>'+b+'</b>',H3),Paragraph(c,SMALL)] for a,b,c in cover],
@@ -205,7 +205,7 @@ def canvas_page(place,host):
         ('RIGHTPADDING',(0,0),(0,-1),6)]))
     S.append(gt)
 
-canvas_page('Orange (Lyon 7)','Julien Manivong, Solutions Engineer')
+canvas_page('Orange — 131 av. Félix Faure, 69003 Lyon','Julien Manivong, Solutions Engineer')
 S.append(PageBreak())
 canvas_page('Sanofi — 14 Bis Innovation Lab','Sylvain Grivel, Head of 14 Bis')
 S.append(PageBreak())

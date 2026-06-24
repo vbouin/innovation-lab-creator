@@ -654,7 +654,7 @@ details.src-d summary{cursor:pointer;font-weight:700;padding:8px 0}
     <h3 style="font-size:26px;margin:6px 0 4px">Learning Expedition — Thursday 25 June 2026</h3>
     <p class="muted" style="margin:0 0 4px">Two inspiring innovation spaces in Lyon, one day. Fill your canvas after each visit.</p>
     <div class="grid g2" style="margin-top:14px">
-      <div class="card"><div class="when">MORNING · 10:30–12:30</div><h4 style="margin:6px 0">Orange — HQ, Lyon 7</h4><p class="muted" style="font-size:13.5px">Host: Julien Manivong, Solutions Engineer. Guided visit of Orange's innovation environment.</p></div>
+      <div class="card"><div class="when">MORNING · 10:30–12:30</div><h4 style="margin:6px 0">Orange — 131 av. Félix Faure, 69003 Lyon</h4><p class="muted" style="font-size:13.5px">Host: Julien Manivong, Solutions Engineer. Guided visit of Orange's innovation environment. <a href="https://maps.google.com/?q=131+Avenue+Félix+Faure+69003+Lyon" target="_blank" rel="noopener">Open in Maps ›</a></p></div>
       <div class="card"><div class="when">AFTERNOON · 14:00–16:00 · arrive 13:45</div><h4 style="margin:6px 0">Sanofi — 14 Bis Innovation Lab</h4><p class="muted" style="font-size:13.5px">Host: Sylvain Grivel, Head of 14 Bis. Tour + hands-on workshop. <b style="color:var(--red)">SAFE training due Mon 23 June.</b></p></div>
     </div>
     <div class="countdown" id="countdown"></div>
@@ -1094,7 +1094,7 @@ function cd(){const now=new Date();let d=Math.max(0,TARGET-now);const days=Math.
   document.getElementById('countdown').innerHTML=[[days,'days'],[h,'hrs'],[m,'min'],[s,'sec']].map(u=>`<div class="u"><b>${u[0]}</b><small>${u[1]}</small></div>`).join('');}
 cd();setInterval(cd,1000);
 // ICS
-const ics=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Exoflow//LEX//EN','BEGIN:VEVENT','UID:lex-2026-orange@exoflow.fr','DTSTART:20260625T083000Z','DTEND:20260625T103000Z','SUMMARY:LEX — Orange Innovation visit (Lyon 7)','DESCRIPTION:Host Julien Manivong. emlyon Executive MBA Learning Expedition.','LOCATION:Orange HQ, Lyon 7','END:VEVENT','BEGIN:VEVENT','UID:lex-2026-sanofi@exoflow.fr','DTSTART:20260625T120000Z','DTEND:20260625T140000Z','SUMMARY:LEX — Sanofi 14 Bis Innovation Lab','DESCRIPTION:Host Sylvain Grivel. Arrive 13:45 Carteret. SAFE training due 23 June.','LOCATION:Sanofi Campus Lyon, Carteret','END:VEVENT','END:VCALENDAR'].join('\r\n');
+const ics=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Exoflow//LEX//EN','BEGIN:VEVENT','UID:lex-2026-orange@exoflow.fr','DTSTART:20260625T083000Z','DTEND:20260625T103000Z','SUMMARY:LEX — Orange Innovation visit (Lyon 3)','DESCRIPTION:Host Julien Manivong. emlyon Executive MBA Learning Expedition.','LOCATION:131 Avenue Félix Faure\\, 69003 Lyon','END:VEVENT','BEGIN:VEVENT','UID:lex-2026-sanofi@exoflow.fr','DTSTART:20260625T120000Z','DTEND:20260625T140000Z','SUMMARY:LEX — Sanofi 14 Bis Innovation Lab','DESCRIPTION:Host Sylvain Grivel. Arrive 13:45 Carteret. SAFE training due 23 June.','LOCATION:Sanofi Campus Lyon, Carteret','END:VEVENT','END:VCALENDAR'].join('\r\n');
 document.getElementById('icsbtn').href='data:text/calendar;charset=utf-8,'+encodeURIComponent(ics);
 
 /* ============ HERO BACKGROUND VIDEO ============ */
